@@ -5,7 +5,7 @@
   "scripts": {
     "deps": "yarn install",
     "api:watch": "shadow-cljs watch api",
-    "api:release": "shadow-cljs release api",
+    "api:release": "shadow-cljs release api"
   },
   "devDependencies": {
     "shadow-cljs": "2.8.52"

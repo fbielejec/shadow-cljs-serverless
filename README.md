@@ -2,6 +2,22 @@
 
 Demo app, developing cloud infra with [shadow-cljs](https://shadow-cljs.github.io/docs/UsersGuide.html) and [serverless](https://serverless.com/).
 
+## Prerequisites
+
+Pretty much follow the [getting-started](https://serverless.com/framework/docs/getting-started/)started.
+You need serverless CLI installed:
+
+```bash
+npm install --global serverless
+```
+Navigate to [dashboard](https://dashboard.serverless.com) and create new application called `serverless-demo`.
+Deploy the application:
+
+```bash
+slsl deploy
+```
+
+
 ## <a name="offline"> Offline development ##
 
 ```bash

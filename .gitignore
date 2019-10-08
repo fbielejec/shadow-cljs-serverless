@@ -1,3 +1,11 @@
+# yarn
+node_modules/
+yarn-error.log
+yarn.lock
+
+# shadow-cljs
+.shadow-cljs/
+
 # Serverless
 api/.serverless/
 api/cljs-runtime/
