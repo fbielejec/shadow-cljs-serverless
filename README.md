@@ -1,6 +1,6 @@
 # shadow-cljs-serverless
 
-Demo app, developing cloud infra with [shadow-cljs](https://shadow-cljs.github.io/docs/UsersGuide.html) and [serverless](https://serverless.com/).
+Demo app, developing cloud infra with [shadow-cljs](https://shadow-cljs.github.io/docs/UsersGuide.html) and [serverless](https://serverless.com/). It showcases a simple graphql endpoint running as an AWS Lambda function.
 
 ## Prerequisites
 
