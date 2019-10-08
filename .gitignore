@@ -1,0 +1,4 @@
+# Serverless
+api/.serverless/
+api/cljs-runtime/
+api/*.js

@@ -1,0 +1,17 @@
+;; shadow-cljs configuration
+{:source-paths ["src/backend"]
+
+ :dependencies [[cider/cider-nrepl "0.22.0-beta12"]
+                [cider/piggieback "0.4.1"]]
+
+ :nrepl {:middleware [cider.piggieback/wrap-cljs-repl]}
+
+ :http {:port 3449
+        :host "0.0.0.0"}
+
+ :builds {:api
+          {:target :node-library
+           :exports {:handler api.graphql/create-handler}
+           :js-options {:js-package-dirs ["./api/node_modules"]}
+           :output-dir "api"
+           :output-to "api/graphql.js"}}}

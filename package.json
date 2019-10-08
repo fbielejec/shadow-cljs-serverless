@@ -1,0 +1,13 @@
+{
+  "name": "serverless-demo",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "deps": "yarn install",
+    "api:watch": "shadow-cljs watch api",
+    "api:release": "shadow-cljs release api",
+  },
+  "devDependencies": {
+    "shadow-cljs": "2.8.52"
+  }
+}

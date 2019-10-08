@@ -1,0 +1,19 @@
+{
+  "name": "clash-api",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "deps": "yarn install",
+    "offline": "sls offline",
+    "deploy": "sls deploy"
+  },
+  "dependencies": {
+    "apollo-server-lambda": "^2.9.5"
+  },
+  "engines": {
+    "node": ">10.0.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^5.12.0"
+  }
+}
