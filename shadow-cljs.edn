@@ -1,5 +1,4 @@
-;; shadow-cljs configuration
-{:source-paths ["src/backend"]
+{:source-paths ["src"]
 
  :dependencies [[cider/cider-nrepl "0.22.0-beta12"]
                 [cider/piggieback "0.4.1"]]

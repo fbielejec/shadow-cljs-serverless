@@ -10,22 +10,21 @@ schema {
 }
 
 type Query {
-    getTodos: [Todo]
+    hello(names: [String]): [Greeting]
 }
 
-type Todo {
+type Greeting {
     id: ID!
-    name: String
-    description: String
-    priority: Int
+    text: String
 }
 ")
 
-(def resolvers {:Query {:getTodos (fn []
-                                    (clj->js [{:id "0"
-                                               :name "FOO"}
-                                              {:id "1"
-                                               :name "BAR"}]))}})
+(def resolvers {:Query {:hello (fn [_ args _]
+                                 (let [{:keys [:names]} (js->clj args :keywordize-keys true)]
+                                   (clj->js (map (fn [n]
+                                                   {:id n
+                                                    :text (str "hello " n)})
+                                                 names))))}})
 
 (defn create-handler [event context callback]
   (let [handler (js-invoke (new ApolloServer (clj->js {:typeDefs schema

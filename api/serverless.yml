@@ -1,5 +1,5 @@
 org: fbielejec
-app: serverless-demo
+app: shadow-cljs-serverless-demo
 service: api
 
 plugins:
